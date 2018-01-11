@@ -297,7 +297,7 @@ class PEP(object):
 
     def __unicode__(self):
         """Return the line entry for the PEP."""
-        pep_info = {'type': self.type_abbr, 'number': str(self.number),
+        pep_info = {'type': self.type_abbr, 'number': '%04d'%self.number,
                 'title': self.title_abbr, 'status': self.status_abbr,
                 'authors': self.author_abbr}
         return constants.column_format % pep_info

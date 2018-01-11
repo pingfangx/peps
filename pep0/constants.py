@@ -6,9 +6,10 @@ if sys.version_info[0] > 2:
 else:
 	text_type = unicode
 
-title_length = 55
-column_format = (u' %(type)1s%(status)1s %(number)4s  %(title)-' +
-                    text_type(title_length) + u's %(authors)-s')
+# 不限制标题长度，方便汉化
+title_length = 1000
+# 添加 \nxx\n ，汉化后再将其替换掉，再转为 html
+column_format = (u' %(type)1s%(status)1s %(number)4s  \nxx\n%(title)s\nxx\n' + u' %(authors)-s')
 
 header = u"""PEP: 0
 Title: Index of Python Enhancement Proposals (PEPs)

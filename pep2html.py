@@ -285,7 +285,7 @@ def fixfile(inpath, input_lines, outfile):
             continue
         else:
             # PEP 0 has some special treatment
-            if basename == 'pep-0000.txt':
+            if basename.startswith('pep-0000'):
                 parts = line.split()
                 if len(parts) > 1 and re.match(r'\s*\d{1,4}', parts[1]):
                     # This is a PEP summary line, which we need to hyperlink
@@ -541,6 +541,8 @@ def make_html(inpath, verbose=0):
         pep_type_error(inpath, pep_type)
         return None
     outpath = os.path.splitext(inpath)[0] + ".html"
+    # 添加以生成到 html 目录
+    outpath = 'html' + os.path.sep + outpath
     if verbose:
         print(inpath, "(%s)" % pep_type, "->", outpath)
         sys.stdout.flush()

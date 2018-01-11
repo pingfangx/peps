@@ -63,6 +63,7 @@ def main(argv):
 
     with codecs.open('pep-0000.txt', 'w', encoding='UTF-8') as pep0_file:
         write_pep0(peps, pep0_file)
+    print('generate pep-0000.txt finish')
 
 if __name__ == "__main__":
     main(sys.argv)
