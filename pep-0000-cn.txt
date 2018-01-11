@@ -1,0 +1,1225 @@
+PEP: 0
+Title: Index of Python Enhancement Proposals (PEPs)
+Version: N/A
+Last-Modified: 2018-01-11
+Author: David Goodger <goodger@python.org>,
+        Barry Warsaw <barry@python.org>
+Status: Active
+Type: Informational
+Created: 13-Jul-2000
+
+
+Introduction
+
+    This PEP contains the index of all Python Enhancement Proposals,
+    known as PEPs.  PEP numbers are assigned by the PEP editors, and
+    once assigned are never changed[1].  The Mercurial history[2] of
+    the PEP texts represent their historical record.
+
+
+Index by Category
+
+     num   title  owner
+     ---   -----  -----
+
+ Meta-PEPs (关于 PEPs 或过程的 PEPs)
+
+ P  0001   PEP 目的和指导方针  Warsaw, Hylton, Goodger, Coghlan
+ P  0004   标准模块的弃用  Cannon, von Löwis
+ P  0005   语言进化指南  Prescod
+ P  0006   Bug 修复版本  Aahz, Baxter
+ P  0007   C 代码样式指南  GvR, Warsaw
+ P  0008   Python 代码样式指南  GvR, Warsaw, Coghlan
+ P  0010   投票指南  Warsaw
+ P  0011   删除对很少使用的平台的支持  von Löwis, Cannon
+ P  0012   reStructuredText PEP 模板示例  Goodger, Warsaw
+
+ 其他信息的 PEPs
+
+ I  0020   Python 之禅  Peters
+ I  0101   制做 Python Releases 101  Warsaw, GvR
+ IF 0247   加密哈希函数的 API  Kuchling
+ IF 0248   Python 数据库 API 规范 v1.0  Lemburg
+ IF 0249   Python 数据库 API 规范 v2.0  Lemburg
+ I  0257   文档字符串约定  Goodger, GvR
+ IF 0272   块加密算法的 API v1.0  Kuchling
+ I  0287   reStructuredText 文档字符串格式  Goodger
+ I  0290   代码迁移和现代化  Hettinger
+ IF 0291   Python 2 标准库的向后兼容性  Norwitz
+ IF 0333   Python Web 服务器网关接口 v1.0  Eby
+ I  0373   Python 2.7 发布计划  Peterson
+ I  0394   类 Unix 系统上的 "python" 命令  Staley, Coghlan, Warsaw
+ IF 0399   原生 Python/C 加速器模块兼容性要求  Cannon
+ IF 0404   Python 2.8 非发布计划  Warsaw
+ IA 0411   Python 标准库中的临时包  Coghlan, Bendersky
+ I  0429   Python 3.4 发布计划  Hastings
+ IF 0430   迁移到 Python 3 作为默认在线文档  Coghlan
+ I  0434   所有分支的 IDLE 增强异常  Rovito, Reedy
+ IA 0440   版本识别和依赖规范  Coghlan, Stufft
+ I  0478   Python 3.5 发布计划  Hastings
+ I  0494   Python 3.6 发布计划  Deily
+ IA 0503   简单的仓库 API  Stufft
+ I  0508   Python 软件包的依赖规范  Collins
+ I  0513   便携式 Linux 构建发行版的平台标签  McGibbon, Smith
+ I  0514   在 Windows 注册表中注册 Python  Dower
+ IA 0518   指定 Python 项目的最低构建系统要求  Cannon, Smith, Stufft
+ I  0537   Python 3.7 发布计划  Deily
+ IF 3333   Python Web 服务器的网关接口 v1.0.1  Eby
+
+ 已接受的 PEPs （已接受;可能尚未实施）
+
+ SA 0345   Python 软件包的元数据 1.2  Jones
+ SA 0376   安装的 Python 发行版数据库  Ziadé
+ SA 0425   构建分布的兼容性标签  Holth
+ SA 0427   轮子二进制包格式 1.0  Holth
+ SA 0484   类型提示  GvR, Lehtosalo, Langa
+ SA 0506   添加一个秘密模块到标准库  D'Aprano
+ SA 0517   源树的构建系统独立格式  Smith, Kluyver
+ SA 0539   CPython 中线程本地存储的新 C-API  Bray, Yamamoto
+ SA 0540   添加一个新的 UTF-8 模式  Stinner
+ SA 0546   将 ssl.MemoryBIO 和 ssl.SSLObject 反向移植到 Python 2.7  Stinner, Benfield
+ SA 0557   数据类  Smith
+ SA 0560   核心支持打字模块和泛型类型  Levkivskyi
+ SA 0562   模块 __getattr__ 和 __dir__  Levkivskyi
+ SA 0563   推迟评估注释  Langa
+ SA 3121   扩展模块初始化和定稿  von Löwis
+
+ 打开的 PEPs (考虑中)
+
+ S  0381   镜像 PyPI 的基础结构  Ziadé, v. Löwis
+ P  0387   向后兼容性策略  Peterson
+ S  0432   重新构建 CPython 启动顺序  Coghlan
+ S  0436   参数诊所 DSL  Hastings
+ S  0447   添加 __getdescriptor__ 方法到元类  Oussoren
+ I  0452   加密哈希函数的 API v2.0  Kuchling, Heimes
+ I  0457   仅位置参数的语法  Hastings
+ S  0458   Surviving a Compromise of PyPI  Kuppusamy, Diaz, Stufft, Cappos
+ S  0467   二进制序列的小 API 改进  Coghlan
+ S  0472   支持使用关键字参数进行索引  Borini, Martinot-Lagarde
+ S  0473   将结构化数据添加到内置异常  Kreft
+ S  0480   Surviving a Compromise of PyPI: The Maximum Security Model  Kuppusamy, Diaz, Stufft, Cappos
+ I  0482   类型提示的文献概述  Langa
+ I  0483   类型提示理论  GvR, Levkivskyi
+ S  0491   轮子二进制包格式 1.9  Holth
+ P  0497   一个标准的向后兼容机制  Schofield
+ S  0499   ``python -m foo`` should bind ``sys.modules['foo']`` in addition to ``sys.modules['__main__']``  Simpson
+ I  0502   字符串插值 - 扩展讨论  Miller
+ S  0533   迭代器的确定性清理  Smith
+ S  0534   分发标准库的一个子集  Orsava, Viktorin, Coghlan
+ S  0536   文字串插值的最终语法  Angerer
+ P  0541   包索引名称保留  Langa
+ S  0542   函数标题中的点符号分配  Meskanen
+ S  0543   Python 的统一 TLS API  Benfield, Heimes
+ S  0544   Protocols: Structural subtyping (static duck typing)  Levkivskyi, Lehtosalo, Langa
+ S  0547   使用 -m 选项运行扩展模块  Plch, Viktorin
+ S  0550   执行上下文  Selivanov, Pranskevichus
+ S  0551   Python 运行时的安全透明度  Dower
+ S  0554   Stdlib 中的多个解释器  Snow
+ S  0556   Threaded garbage collection  Pitrou
+ S  0558   为 locals() 定义的语义  Coghlan
+ S  0561   分发和包装类型信息  Smith
+ S  0566   Python 软件包的元数据 1.3  Ingram
+ S  0567   上下文变量  Selivanov
+
+ 完成的 PEPs （完成，在代码库中实现）
+
+ SF 0100   Python Unicode 集成  Lemburg
+ SF 0201   锁步迭代  Warsaw
+ SF 0202   列表解析  Warsaw
+ SF 0203   增强分配  Wouters
+ SF 0205   弱引用  Drake
+ SF 0207   丰富的比较  GvR, Ascher
+ SF 0208   改造强制模式  Schemenauer, Lemburg
+ SF 0214   扩展打印语句  Warsaw
+ SF 0217   显示挂钩交互使用  Zadka
+ SF 0218   Adding a Built-In Set Object Type  Wilson, Hettinger
+ SF 0221   Import As  Wouters
+ SF 0223   更改 ``\x`` 转义的含义  Peters
+ SF 0227   静态嵌套作用域  Hylton
+ SF 0229   使用 Distutils 来构建 Python  Kuchling
+ SF 0230   警告框架  GvR
+ SF 0232   函数属性  Warsaw
+ SF 0234   迭代器  Yee, GvR
+ SF 0235   在不区分大小写的平台上导入  Peters
+ SF 0236   回到 __future__  Peters
+ SF 0237   统一长整数和整数  Zadka, GvR
+ SF 0238   更改除法运算符  Zadka, GvR
+ SF 0241   Python 软件包的元数据  Kuchling
+ SF 0250   在 Windows 上使用网站包  Moore
+ SF 0252   让类型更像类  GvR
+ SF 0253   子类型内置类型  GvR
+ SF 0255   简化生成器  Schemenauer, Peters, Hetland
+ SF 0260   简化 xrange()  GvR
+ SF 0261   支持 "宽" Unicode 字符  Prescod
+ SF 0263   定义 Python 源代码编码  Lemburg, von Löwis
+ SF 0264   Future statements in simulated shells  Hudson
+ SF 0273   从 Zip 档案导入模块  Ahlstrom
+ SF 0274   字典解析  Warsaw
+ SF 0277   Unicode 文件名支持 Windows NT  Hodgson
+ SF 0278   通用换行支持  Jansen
+ SF 0279   enumerate() 内置函数  Hettinger
+ SF 0282   记录系统  Sajip, Mick
+ SF 0285   添加一个布尔类型  GvR
+ SF 0289   生成器表达式  Hettinger
+ SF 0292   简化字符串替换  Warsaw
+ SF 0293   编解码器错误处理回调  Dörwald
+ SF 0301   打包索引和 Distutils 的元数据  Jones
+ SF 0302   新的 import 挂钩  JvR, Moore
+ SF 0305   CSV 文件 API  Altis, Cole, McNamara, Montanaro, Wells
+ SF 0307   对 pickle 协议的扩展  GvR, Peters
+ SF 0308   条件表达式  GvR, Hettinger
+ SF 0309   部分功能应用  Harris
+ SF 0311   Simplified Global Interpreter Lock Acquisition for Extensions  Hammond
+ SF 0314   Python 软件包的元数据 1.1  Kuchling, Jones
+ SF 0318   函数和方法的装饰器  Smith
+ SF 0322   反向迭代  Hettinger
+ SF 0324   subprocess - 新的进程模块  Astrand
+ SF 0327   十进制数据类型  Batista
+ SF 0328   Imports: 多行和 绝对/相对  Aahz
+ SF 0331   与区域无关的浮点数/字符串转换  Reis
+ SF 0338   执行模块作为脚本  Coghlan
+ SF 0341   统一 try-except 和 try-finally  Brandl
+ SF 0342   通过增强型生成器的协程  GvR, Eby
+ SF 0343   "with" 语句  GvR, Coghlan
+ SF 0352   异常的必需超类  Cannon, GvR
+ SF 0353   使用 ssize_t 作为索引类型  von Löwis
+ SF 0357   允许任何对象用于切片  Oliphant
+ SF 0358   "bytes" 对象  Schemenauer, GvR
+ SF 0362   函数签名对象  Cannon, Seo, Selivanov, Hastings
+ SF 0366   主模块显式相对导入  Coghlan
+ SF 0370   每个用户 site-packages 目录  Heimes
+ SF 0371   将多处理包添加到标准库中  Noller, Oudkerk
+ SF 0372   将一个有序的字典添加到集合  Ronacher, Hettinger
+ SF 0378   千位分隔符的格式说明符  Hettinger
+ SF 0380   委派给子生成器的语法  Ewing
+ SF 0383   系统字符界面中的不可解码字节  v. Löwis
+ SF 0384   定义一个稳定的 ABI  v. Löwis
+ SF 0389   argparse - 新的命令行解析模块  Bethard
+ SF 0391   用于记录的基于字典的配置  Sajip
+ SF 0393   灵活的字符串表示  v. Löwis
+ SF 0397   Windows 的 Python 启动器  Hammond, v. Löwis
+ SF 0405   Python 虚拟环境  Meyer
+ SF 0409   抑制异常上下文  Furman
+ SF 0412   密钥分享字典  Shannon
+ SF 0414   Python 3.3 的显式 Unicode 文本  Ronacher, Coghlan
+ SF 0415   使用异常属性实现上下文抑制  Peterson
+ SF 0417   包括模拟标准库  Foord
+ SF 0418   Add monotonic time, performance counter, and process time functions  Simpson, Jewett, Turnbull, Stinner
+ SF 0420   隐式命名空间包  Smith
+ SF 0421   添加 sys.implementation  Snow
+ SF 0424   暴露长度提示的方法  Gaynor
+ SF 0428   pathlib 模块 - 面向对象的文件系统路径  Pitrou
+ SF 0435   将一个 Enum 类型添加到 Python 标准库中  Warsaw, Bendersky, Furman
+ SF 0441   改进 Python ZIP 应用程序支持  Holth, Moore
+ SF 0442   安全的对象 finalization  Pitrou
+ SF 0443   Single-dispatch generic functions  Langa
+ SF 0445   添加新的 API 来自定义 Python 内存分配器  Stinner
+ SF 0446   使新创建的文件描述符不可继承  Stinner
+ SF 0448   附加解包概括  Landau
+ SF 0450   将统计模块添加到标准库  D'Aprano
+ SF 0451   导入系统的 ModuleSpec 类型  Snow
+ SF 0453   在 Python 安装中显式引导 pip  Stufft, Coghlan
+ SF 0454   添加一个新的 tracemalloc 模块来跟踪 Python 内存分配  Stinner
+ SF 0456   安全可互换的散列算法  Heimes
+ SF 0461   将 % 格式添加到字节和字节数组中  Furman
+ SF 0465   用于矩阵乘法的专用中缀运算符  Smith
+ SF 0466   针对 Python 2.7.x 的网络安全增强功能  Coghlan
+ SF 0468   在函数中保存 \*\*kwargs 的顺序  Snow
+ SF 0471   os.scandir() function -- 一个更好更快的目录迭代器  Hoyt
+ SF 0475   重试系统调用与 EINTR 失败  Natali, Stinner
+ SF 0476   默认为 stdlib http 客户端启用证书验证  Gaynor
+ SF 0477   向 Python 2.7 反向保证（PEP 453）  Stufft, Coghlan
+ SF 0479   更改生成器内的 StopIteration 处理  Angelico, GvR
+ SF 0485   用于测试近似相等的函数  Barker
+ SF 0486   让 Python 启动器知道虚拟环境  Moore
+ SF 0487   更简单的类创建定制  Teichmann
+ SF 0488   消除 PYO 文件  Cannon
+ SF 0489   多相扩展模块初始化  Viktorin, Behnel, Coghlan
+ SF 0492   具有异步和等待语法的协程  Selivanov
+ SF 0493   用于 Python 2.7 的 HTTPS 验证迁移工具  Coghlan, Kuska, Lemburg
+ SF 0495   当地时间消除歧义  Belopolsky, Peters
+ SF 0498   字符串插值  Smith
+ SF 0509   Add a private version to dict  Stinner
+ SF 0515   数字文字中的下划线  Brandl, Storchaka
+ SF 0519   添加文件系统路径协议  Cannon, Zevenhoven
+ SF 0520   保留类的属性定义顺序  Snow
+ SF 0523   将框架评估 API 添加到 CPython  Cannon, Viehland
+ SF 0524   在 Linux 上设置 os.urandom() 阻塞  Stinner
+ SF 0525   异步生成器  Selivanov
+ SF 0526   变量注释的语法  Gonzalez, House, Levkivskyi, Roach, GvR
+ SF 0528   将 Windows 控制台编码更改为 UTF-8  Dower
+ SF 0529   将 Windows 文件系统编码更改为 UTF-8  Dower
+ SF 0530   异步解析  Selivanov
+ SF 0538   将传统的 C 语言环境强制转换为基于 UTF-8 的语言环境  Coghlan
+ SF 0552   确定性的 pycs  Peterson
+ SF 0553   Built-in breakpoint()  Warsaw
+ SF 0564   添加新的以纳秒为单位的时间函数  Stinner
+ SF 0565   在 __main__ 中显示 DeprecationWarning  Coghlan
+ SF 0628   添加 ``math.tau``  Coghlan
+ SF 3101   高级字符串格式  Talin
+ SF 3102   仅关键字参数  Talin
+ SF 3104   在外部范围访问名称  Yee
+ SF 3105   Make print a function  Brandl
+ SF 3106   修改 dict.keys(), .values() 和 .items()  GvR
+ SF 3107   函数注释  Winter, Lownds
+ SF 3108   标准库的重组  Cannon
+ SF 3109   在 Python 3000 中引发异常  Winter
+ SF 3110   在 Python 3000 中捕捉异常  Winter
+ SF 3111   简单的输入内置在 Python 3000 中  Roberge
+ SF 3112   Python 3000 中的字节文字  Orendorff
+ SF 3113   去除元组参数拆包  Cannon
+ SF 3114   重命名 iterator.next() 为 iterator.__next__()  Yee
+ SF 3115   Python 3000 中的元类  Talin
+ SF 3116   新的 I/O  Stutzbach, GvR, Verdone
+ SF 3118   修改缓冲区协议  Oliphant, Banks
+ SF 3119   引入抽象基类  GvR, Talin
+ SF 3120   使用 UTF-8 作为默认的源码编码  von Löwis
+ SF 3123   使 PyObject_HEAD 符合标准 C  von Löwis
+ SF 3127   整数文字支持和语法  Maupin
+ SF 3129   Class Decorators  Winter
+ SF 3131   支持非 ASCII 标识符  von Löwis
+ SF 3132   扩展的 Iterable 解包  Brandl
+ SF 3134   异常链接和嵌入式回溯  Yee
+ SF 3135   新的 super  Spealman, Delaney, Ryan
+ SF 3137   不可变字节和可变缓冲区  GvR
+ SF 3138   Python 3000 中的字符串表示  Ishimoto
+ SF 3141   数字的类型层次结构  Yasskin
+ SF 3144   Python 标准库的 IP 地址操作库  Moody
+ SF 3147   PYC 存储库目录  Warsaw
+ SF 3148   futures - execute computations asynchronously  Quinlan
+ SF 3149   ABI 版本标记 .so 文件  Warsaw
+ SF 3151   修改操作系统和 IO 异常层次结构  Pitrou
+ SF 3154   Pickle 协议版本 4  Pitrou
+ SF 3155   类和函数的限定名  Pitrou
+ SF 3156   Asynchronous IO Support Rebooted: the "asyncio" Module  GvR
+
+ 历史 Meta-PEPs 和信息 PEPs
+
+ PF 0002   添加新模块的步骤  Faassen
+ IF 0160   Python 1.6 发布计划  Drake
+ IF 0200   Python 2.0 发布计划  Hylton
+ IF 0226   Python 2.1 发布计划  Hylton
+ IF 0251   Python 2.2 发布计划  Warsaw, GvR
+ IF 0283   Python 2.3 发布计划  GvR
+ IF 0320   Python 2.4 发布计划  Warsaw, Hettinger, Baxter
+ PF 0347   将 Python CVS 迁移到 Subversion  von Löwis
+ IF 0356   Python 2.5 发布计划  Norwitz, GvR, Baxter
+ PF 0360   外部维护包  Cannon
+ IF 0361   Python 2.6 和 3.0 发布计划  Norwitz, Warsaw
+ PF 0374   为 Python 项目选择分布式 VCS  Cannon, Turnbull, Vassalotti, Warsaw, Ochtman
+ IF 0375   Python 3.1 发布计划  Peterson
+ PF 0385   从 Subversion 迁移到 Mercurial  Ochtman, Pitrou, Brandl
+ IF 0392   Python 3.2 发布计划  Brandl
+ IF 0398   Python 3.3 发布计划  Brandl
+ PS 0438   在 PyPI 上过渡到发布文件托管  Krekel, Meyer
+ PA 0449   删除 PyPI 镜像自动发现和命名方案  Stufft
+ PA 0464   删除 PyPI 镜像真实性 API  Stufft
+ PA 0470   删除 PyPI 上的外部托管支持  Stufft
+ PF 0512   从 hg.python.org 迁移到 GitHub  Cannon
+ PA 0527   Removing Un(der)used file types/extensions on PyPI  Stufft
+ PF 0545   Python 文档翻译  Palard, Naoki, Stinner
+ PF 3000   Python 3000  GvR
+ PF 3002   向后不兼容的更改过程  Bethard
+ PF 3003   Python Language Moratorium  Cannon, Noller, GvR
+ PF 3099   Python 3000 中不会改变的东西  Brandl
+ PF 3100   杂项 Python 3.0 计划  Cannon
+
+ 推迟的 PEP
+
+ SD 0213   属性访问处理程序  Prescod
+ SD 0219   无堆栈的 Python  McMillan
+ SD 0222   Web 库增强功能  Kuchling
+ SD 0233   Python 在线帮助  Prescod
+ SD 0262   已安装 Python 包的数据库  Kuchling
+ SD 0267   优化对模块命名空间的访问  Hylton
+ SD 0269   Python 的 Pgen 模块  Riehl
+ SD 0280   优化对全局的访问  GvR
+ SD 0286   增强的参数元组  von Löwis
+ SD 0312   简单的隐式 Lambda  Suzi, Martelli
+ SD 0316   Python 合同编程  Way
+ SD 0323   可复制的迭代器  Martelli
+ SD 0337   标准库中的日志使用  Dubner
+ SD 0349   允许 str() 返回 unicode 字符串  Schemenauer
+ SD 0368   标准的图像协议和类  Mastrodomenico
+ ID 0396   模块版本号  Warsaw
+ SD 0400   弃用 codecs.StreamReader 和 codecs.StreamWriter  Stinner
+ SD 0403   General purpose decorator clause (aka "@in" clause)  Coghlan
+ PD 0407   新的发布周期和引入长期支持版本  Pitrou, Brandl, Warsaw
+ SD 0419   保护清理语句不受干扰  Colomiets
+ ID 0423   与包相关的命名约定和配方  Bryon
+ ID 0426   Python 软件包的元数据 2.0  Coghlan, Holth, Stufft
+ ID 0444   Python Web3 接口  McDonough, Ronacher
+ SD 0459   Python 软件包的标准元数据扩展  Coghlan
+ SD 0501   通用字符串插值  Coghlan
+ SD 0505   None-aware operators  Haase
+ SD 0521   Managing global context via 'with' blocks in generators and coroutines  Smith
+ SD 0532   一个断路协议和二元运算符  Coghlan, Haase
+ SD 0535   丰富的比较链接  Coghlan
+ SD 0568   上下文变量的发生器灵敏度  Smith
+ SD 3124   重载，泛型函数，接口和适配器  Eby
+ SD 3143   标准守护进程库  Finney
+ SD 3150   Statement local namespaces (aka "given" clause)  Coghlan
+
+ 放弃，撤回和拒绝的 PEPs
+
+ PW 0003   处理 Bug 报告指南  Hylton
+ PW 0009   示例纯文本 PEP 模板  Warsaw
+ PR 0042   功能请求  Hylton
+ IS 0102   做 Python 微型版本  Baxter, Warsaw, GvR
+ IW 0103   收集有关 git 的信息  Broytman
+ SR 0204   范围文字  Wouters
+ IW 0206   Python 高级库  Kuchling
+ SW 0209   多维数组  Barrett, Oliphant
+ SR 0210   Decoupling the Interpreter Loop  Ascher
+ SR 0211   Adding A New Outer Product Operator  Wilson
+ SR 0212   循环计数器迭代  Schneider-Kamp
+ SS 0215   字符串插值  Yee
+ IR 0216   文档字符串格式  Zadka
+ IR 0220   Coroutines, Generators, Continuations  McMillan
+ SR 0224   属性 Docstrings  Lemburg
+ SR 0225   Elementwise/Objectwise Operators  Zhu, Lielens
+ SW 0228   重新编写 Python 的数字模型  Zadka, GvR
+ SR 0231   __findattr__()  Warsaw
+ SR 0239   添加一个 Rational 类型到 Python  Craig, Zadka
+ SR 0240   添加一个 Rational Literal 到 Python  Craig, Zadka
+ SR 0242   数字种类  Dubois
+ SW 0243   模块库上传机制  Reifschneider
+ SR 0244   The ``directive`` statement  von Löwis
+ SR 0245   Python 接口语法  Pelletier
+ SR 0246   对象适应  Martelli, Evans
+ SR 0254   让类更像类型  GvR
+ SR 0256   文档字符串处理系统框架  Goodger
+ SR 0258   Docutils 设计规范  Goodger
+ SR 0259   换行之后省略打印换行符  GvR
+ SR 0265   按值排序词典  Griffin
+ SW 0266   优化全局变量/属性访问  Montanaro
+ SR 0268   扩展的 HTTP 功能和 WebDAV  Stein
+ SR 0270   列表对象的 uniq 方法  Petrone
+ SR 0271   通过命令行选项添加 sys.path 前缀  Giacometti
+ SR 0275   Switching on Multiple Values  Lemburg
+ SR 0276   整数的简单迭代器  Althoff
+ SR 0281   range 和 xrange 循环计数器迭代  Hetland
+ SR 0284   整数 for 循环  Eppstein, Ewing
+ SW 0288   生成器属性和异常  Hettinger
+ SR 0294   在类型模块中输入名称  Tirosh
+ SR 0295   多行字符串常量的解释  Koltsov
+ SW 0296   添加一个字节对象类型  Gilbert
+ SR 0297   支持系统升级  Lemburg
+ SW 0298   锁定的缓冲区接口  Heller
+ SR 0299   模块中特殊的 __main __() 函数  Epler
+ SR 0303   Extend divmod() for Multiple Divisors  Bellman
+ SW 0304   Controlling Generation of Bytecode Files  Montanaro
+ IW 0306   如何更改 Python 的语法  Hudson, Diederich, Coghlan, Peterson
+ SR 0310   Reliable Acquisition/Release Pairs  Hudson, Moore
+ SR 0313   将罗马数字文字添加到 Python  Meyer
+ SR 0315   增强 While 循环  Hettinger, Carroll
+ SR 0317   Eliminate Implicit Exception Instantiation  Taschuk
+ SR 0319   Python 同步/异步块  Pelletier
+ SW 0321   日期/时间解析和格式化  Kuchling
+ SR 0325   Resource-Release Support for Generators  Pedroni
+ SR 0326   A Case for Top and Bottom Values  Carlson, Reedy
+ SR 0329   在标准库中处理 Builtin 作为常量  Hettinger
+ SR 0330   Python 的字节码验证  Pelletier
+ SR 0332   Byte vectors and String/Unicode Unification  Montanaro
+ SW 0334   简单的协程通过 SuspendIteration  Evans
+ SR 0335   可重载布尔运算符  Ewing
+ SR 0336   Make None Callable  McClelland
+ IW 0339   CPython 编译器的设计  Cannon
+ SR 0340   匿名块声明  GvR
+ SS 0344   异常链接和嵌入式回溯  Yee
+ SW 0346   User Defined ("``with``") Statements  Coghlan
+ SR 0348   Python 3.0 的异常重组  Cannon
+ IR 0350   Codetags  Elliott
+ SR 0351   The freeze protocol  Warsaw
+ SS 0354   Python 中的枚举  Finney
+ SR 0355   路径 - 面向对象的文件系统路径  Lindqvist
+ SW 0359   The "make" Statement  Bethard
+ SR 0363   Syntax For Dynamic Attribute Access  North
+ SW 0364   转换到 Py3K 标准库  Warsaw
+ SR 0365   Adding the pkg_resources module  Eby
+ SS 0367   新的 super  Spealman, Delaney
+ SW 0369   Post import hooks  Heimes
+ SR 0377   Allow __enter__() methods to skip the statement body  Coghlan
+ SW 0379   添加一个赋值表达式  Whitley
+ SR 0382   命名空间包  v. Löwis
+ SS 0386   更改 Distutils 中的版本比较模块  Ziadé
+ SR 0390   Distutils 的静态元数据  Ziadé
+ SW 0395   模块的限定名  Coghlan
+ PR 0401   BDFL Retirement  Warsaw, Cannon
+ SR 0402   简化的包布局和分区  Eby
+ SW 0406   改进了 import 状态的封装  Coghlan, Slodkowicz
+ SR 0408   标准库 __preview__ 包  Coghlan, Bendersky
+ SR 0410   对时间戳使用 decimal.Decimal 类型  Stinner
+ PW 0413   Python 标准库的更快发展  Coghlan
+ SR 0416   添加一个 frozendict 内建类型  Stinner
+ SW 0422   更简单的类创建定制  Coghlan, Urban
+ SW 0431   时区支持改进  Regebro
+ SS 0433   更容易抑制文件描述符的继承  Stinner
+ SR 0437   用于指定签名，注释和参数转换器的 DSL  Krah
+ SR 0439   在 Python 安装中包含隐式 pip 引导  Jones
+ SR 0455   将 key 转换字典添加到集合  Pitrou
+ SW 0460   添加二进制插值和格式  Pitrou
+ PW 0462   CPython 的核心开发工作流程自动化  Coghlan
+ SR 0463   捕获异常的表达式  Angelico
+ SW 0469   字典迭代代码迁移到 Python 3  Coghlan
+ PW 0474   创建 forge.python.org  Coghlan
+ PW 0481   将 CPython 迁移到 Git，Github 和 Phabricator  Stufft
+ SR 0490   C 级别的连锁异常  Stinner
+ IR 0496   环境标记  Polley
+ SR 0500   将日期时间方法委托给他们的协议
+       tzinfo 实现  Belopolsky, Peters
+ SW 0504   默认使用系统 RNG  Coghlan
+ PR 0507   将 CPython 迁移到 Git 和 GitLab  Warsaw
+ SR 0510   Specialize functions with guards  Stinner
+ SR 0511   代码转换器的 API  Stinner
+ SR 0516   为 pip/conda 等构建系统抽象  Collins, Smith
+ SR 0522   在安全敏感的 API 中允许 BlockingIOError  Coghlan, Smith
+ SW 0531   存在检查操作符  Coghlan
+ SR 0548   更灵活的循环控制  Murray
+ SR 0549   实例描述符  Hastings
+ SW 0555   上下文局部变量(contextvars)  Zevenhoven
+ SR 0559   内置 noop()  Warsaw
+ SR 0666   拒绝愚蠢的缩进  Creighton
+ SR 0754   IEEE 754 浮点特殊值  Warnes
+ PW 3001   审查和改进标准库模块的程序  Brandl
+ SR 3103   Switch/Case 语句  GvR
+ SR 3117   后缀类型声明  Brandl
+ SR 3122   主模块的描述  Cannon
+ SR 3125   删除反斜杠继续  Jewett
+ SR 3126   删除隐式字符串连接  Jewett, Hettinger
+ SR 3128   BList：更快的列表类型  Stutzbach
+ SR 3130   访问当前模块/类/功能  Jewett
+ SR 3133   引入 Roles  Winter
+ SR 3136   标记中断和继续  Chisholm
+ SR 3139   清除 sys 和 "interpreter" 模块  Peterson
+ SR 3140   str(container) 应该调用 str(item)，而不是 repr(item)  Broytman, Jewett
+ SR 3142   为生成器表达式添加一个 "while" 子句  Britton
+ SW 3145   subprocess.Popen 的 异步 I/O  Pruitt, McCreary, Carlson
+ SW 3146   将 Unladen Swallow 合并到 CPython 中  Winter, Yasskin, Kleckner
+ SR 3152   Cofunctions  Ewing
+ SS 3153   异步 IO 支持  Houtven
+
+
+数字索引
+
+     num   title  owner
+     ---   -----  -----
+ P  0001   PEP 目的和指导方针  Warsaw, Hylton, Goodger, Coghlan
+ PF 0002   添加新模块的步骤  Faassen
+ PW 0003   处理 Bug 报告指南  Hylton
+ P  0004   标准模块的弃用  Cannon, von Löwis
+ P  0005   语言进化指南  Prescod
+ P  0006   Bug 修复版本  Aahz, Baxter
+ P  0007   C 代码样式指南  GvR, Warsaw
+ P  0008   Python 代码样式指南  GvR, Warsaw, Coghlan
+ PW 0009   示例纯文本 PEP 模板  Warsaw
+ P  0010   投票指南  Warsaw
+ P  0011   删除对很少使用的平台的支持  von Löwis, Cannon
+ P  0012   reStructuredText PEP 模板示例  Goodger, Warsaw
+
+ I  0020   Python 之禅  Peters
+
+ PR 0042   功能请求  Hylton
+
+ SF 0100   Python Unicode 集成  Lemburg
+ I  0101   制做 Python Releases 101  Warsaw, GvR
+ IS 0102   做 Python 微型版本  Baxter, Warsaw, GvR
+ IW 0103   收集有关 git 的信息  Broytman
+
+ IF 0160   Python 1.6 发布计划  Drake
+
+ IF 0200   Python 2.0 发布计划  Hylton
+ SF 0201   锁步迭代  Warsaw
+ SF 0202   列表解析  Warsaw
+ SF 0203   增强分配  Wouters
+ SR 0204   范围文字  Wouters
+ SF 0205   弱引用  Drake
+ IW 0206   Python 高级库  Kuchling
+ SF 0207   丰富的比较  GvR, Ascher
+ SF 0208   改造强制模式  Schemenauer, Lemburg
+ SW 0209   多维数组  Barrett, Oliphant
+ SR 0210   Decoupling the Interpreter Loop  Ascher
+ SR 0211   Adding A New Outer Product Operator  Wilson
+ SR 0212   循环计数器迭代  Schneider-Kamp
+ SD 0213   属性访问处理程序  Prescod
+ SF 0214   扩展打印语句  Warsaw
+ SS 0215   字符串插值  Yee
+ IR 0216   文档字符串格式  Zadka
+ SF 0217   显示挂钩交互使用  Zadka
+ SF 0218   Adding a Built-In Set Object Type  Wilson, Hettinger
+ SD 0219   无堆栈的 Python  McMillan
+ IR 0220   Coroutines, Generators, Continuations  McMillan
+ SF 0221   Import As  Wouters
+ SD 0222   Web 库增强功能  Kuchling
+ SF 0223   更改 ``\x`` 转义的含义  Peters
+ SR 0224   属性 Docstrings  Lemburg
+ SR 0225   Elementwise/Objectwise Operators  Zhu, Lielens
+ IF 0226   Python 2.1 发布计划  Hylton
+ SF 0227   静态嵌套作用域  Hylton
+ SW 0228   重新编写 Python 的数字模型  Zadka, GvR
+ SF 0229   使用 Distutils 来构建 Python  Kuchling
+ SF 0230   警告框架  GvR
+ SR 0231   __findattr__()  Warsaw
+ SF 0232   函数属性  Warsaw
+ SD 0233   Python 在线帮助  Prescod
+ SF 0234   迭代器  Yee, GvR
+ SF 0235   在不区分大小写的平台上导入  Peters
+ SF 0236   回到 __future__  Peters
+ SF 0237   统一长整数和整数  Zadka, GvR
+ SF 0238   更改除法运算符  Zadka, GvR
+ SR 0239   添加一个 Rational 类型到 Python  Craig, Zadka
+ SR 0240   添加一个 Rational Literal 到 Python  Craig, Zadka
+ SF 0241   Python 软件包的元数据  Kuchling
+ SR 0242   数字种类  Dubois
+ SW 0243   模块库上传机制  Reifschneider
+ SR 0244   The ``directive`` statement  von Löwis
+ SR 0245   Python 接口语法  Pelletier
+ SR 0246   对象适应  Martelli, Evans
+ IF 0247   加密哈希函数的 API  Kuchling
+ IF 0248   Python 数据库 API 规范 v1.0  Lemburg
+ IF 0249   Python 数据库 API 规范 v2.0  Lemburg
+ SF 0250   在 Windows 上使用网站包  Moore
+ IF 0251   Python 2.2 发布计划  Warsaw, GvR
+ SF 0252   让类型更像类  GvR
+ SF 0253   子类型内置类型  GvR
+ SR 0254   让类更像类型  GvR
+ SF 0255   简化生成器  Schemenauer, Peters, Hetland
+ SR 0256   文档字符串处理系统框架  Goodger
+ I  0257   文档字符串约定  Goodger, GvR
+ SR 0258   Docutils 设计规范  Goodger
+ SR 0259   换行之后省略打印换行符  GvR
+ SF 0260   简化 xrange()  GvR
+ SF 0261   支持 "宽" Unicode 字符  Prescod
+ SD 0262   已安装 Python 包的数据库  Kuchling
+ SF 0263   定义 Python 源代码编码  Lemburg, von Löwis
+ SF 0264   Future statements in simulated shells  Hudson
+ SR 0265   按值排序词典  Griffin
+ SW 0266   优化全局变量/属性访问  Montanaro
+ SD 0267   优化对模块命名空间的访问  Hylton
+ SR 0268   扩展的 HTTP 功能和 WebDAV  Stein
+ SD 0269   Python 的 Pgen 模块  Riehl
+ SR 0270   列表对象的 uniq 方法  Petrone
+ SR 0271   通过命令行选项添加 sys.path 前缀  Giacometti
+ IF 0272   块加密算法的 API v1.0  Kuchling
+ SF 0273   从 Zip 档案导入模块  Ahlstrom
+ SF 0274   字典解析  Warsaw
+ SR 0275   Switching on Multiple Values  Lemburg
+ SR 0276   整数的简单迭代器  Althoff
+ SF 0277   Unicode 文件名支持 Windows NT  Hodgson
+ SF 0278   通用换行支持  Jansen
+ SF 0279   enumerate() 内置函数  Hettinger
+ SD 0280   优化对全局的访问  GvR
+ SR 0281   range 和 xrange 循环计数器迭代  Hetland
+ SF 0282   记录系统  Sajip, Mick
+ IF 0283   Python 2.3 发布计划  GvR
+ SR 0284   整数 for 循环  Eppstein, Ewing
+ SF 0285   添加一个布尔类型  GvR
+ SD 0286   增强的参数元组  von Löwis
+ I  0287   reStructuredText 文档字符串格式  Goodger
+ SW 0288   生成器属性和异常  Hettinger
+ SF 0289   生成器表达式  Hettinger
+ I  0290   代码迁移和现代化  Hettinger
+ IF 0291   Python 2 标准库的向后兼容性  Norwitz
+ SF 0292   简化字符串替换  Warsaw
+ SF 0293   编解码器错误处理回调  Dörwald
+ SR 0294   在类型模块中输入名称  Tirosh
+ SR 0295   多行字符串常量的解释  Koltsov
+ SW 0296   添加一个字节对象类型  Gilbert
+ SR 0297   支持系统升级  Lemburg
+ SW 0298   锁定的缓冲区接口  Heller
+ SR 0299   模块中特殊的 __main __() 函数  Epler
+
+ SF 0301   打包索引和 Distutils 的元数据  Jones
+ SF 0302   新的 import 挂钩  JvR, Moore
+ SR 0303   Extend divmod() for Multiple Divisors  Bellman
+ SW 0304   Controlling Generation of Bytecode Files  Montanaro
+ SF 0305   CSV 文件 API  Altis, Cole, McNamara, Montanaro, Wells
+ IW 0306   如何更改 Python 的语法  Hudson, Diederich, Coghlan, Peterson
+ SF 0307   对 pickle 协议的扩展  GvR, Peters
+ SF 0308   条件表达式  GvR, Hettinger
+ SF 0309   部分功能应用  Harris
+ SR 0310   Reliable Acquisition/Release Pairs  Hudson, Moore
+ SF 0311   Simplified Global Interpreter Lock Acquisition for Extensions  Hammond
+ SD 0312   简单的隐式 Lambda  Suzi, Martelli
+ SR 0313   将罗马数字文字添加到 Python  Meyer
+ SF 0314   Python 软件包的元数据 1.1  Kuchling, Jones
+ SR 0315   增强 While 循环  Hettinger, Carroll
+ SD 0316   Python 合同编程  Way
+ SR 0317   Eliminate Implicit Exception Instantiation  Taschuk
+ SF 0318   函数和方法的装饰器  Smith
+ SR 0319   Python 同步/异步块  Pelletier
+ IF 0320   Python 2.4 发布计划  Warsaw, Hettinger, Baxter
+ SW 0321   日期/时间解析和格式化  Kuchling
+ SF 0322   反向迭代  Hettinger
+ SD 0323   可复制的迭代器  Martelli
+ SF 0324   subprocess - 新的进程模块  Astrand
+ SR 0325   Resource-Release Support for Generators  Pedroni
+ SR 0326   A Case for Top and Bottom Values  Carlson, Reedy
+ SF 0327   十进制数据类型  Batista
+ SF 0328   Imports: 多行和 绝对/相对  Aahz
+ SR 0329   在标准库中处理 Builtin 作为常量  Hettinger
+ SR 0330   Python 的字节码验证  Pelletier
+ SF 0331   与区域无关的浮点数/字符串转换  Reis
+ SR 0332   Byte vectors and String/Unicode Unification  Montanaro
+ IF 0333   Python Web 服务器网关接口 v1.0  Eby
+ SW 0334   简单的协程通过 SuspendIteration  Evans
+ SR 0335   可重载布尔运算符  Ewing
+ SR 0336   Make None Callable  McClelland
+ SD 0337   标准库中的日志使用  Dubner
+ SF 0338   执行模块作为脚本  Coghlan
+ IW 0339   CPython 编译器的设计  Cannon
+ SR 0340   匿名块声明  GvR
+ SF 0341   统一 try-except 和 try-finally  Brandl
+ SF 0342   通过增强型生成器的协程  GvR, Eby
+ SF 0343   "with" 语句  GvR, Coghlan
+ SS 0344   异常链接和嵌入式回溯  Yee
+ SA 0345   Python 软件包的元数据 1.2  Jones
+ SW 0346   User Defined ("``with``") Statements  Coghlan
+ PF 0347   将 Python CVS 迁移到 Subversion  von Löwis
+ SR 0348   Python 3.0 的异常重组  Cannon
+ SD 0349   允许 str() 返回 unicode 字符串  Schemenauer
+ IR 0350   Codetags  Elliott
+ SR 0351   The freeze protocol  Warsaw
+ SF 0352   异常的必需超类  Cannon, GvR
+ SF 0353   使用 ssize_t 作为索引类型  von Löwis
+ SS 0354   Python 中的枚举  Finney
+ SR 0355   路径 - 面向对象的文件系统路径  Lindqvist
+ IF 0356   Python 2.5 发布计划  Norwitz, GvR, Baxter
+ SF 0357   允许任何对象用于切片  Oliphant
+ SF 0358   "bytes" 对象  Schemenauer, GvR
+ SW 0359   The "make" Statement  Bethard
+ PF 0360   外部维护包  Cannon
+ IF 0361   Python 2.6 和 3.0 发布计划  Norwitz, Warsaw
+ SF 0362   函数签名对象  Cannon, Seo, Selivanov, Hastings
+ SR 0363   Syntax For Dynamic Attribute Access  North
+ SW 0364   转换到 Py3K 标准库  Warsaw
+ SR 0365   Adding the pkg_resources module  Eby
+ SF 0366   主模块显式相对导入  Coghlan
+ SS 0367   新的 super  Spealman, Delaney
+ SD 0368   标准的图像协议和类  Mastrodomenico
+ SW 0369   Post import hooks  Heimes
+ SF 0370   每个用户 site-packages 目录  Heimes
+ SF 0371   将多处理包添加到标准库中  Noller, Oudkerk
+ SF 0372   将一个有序的字典添加到集合  Ronacher, Hettinger
+ I  0373   Python 2.7 发布计划  Peterson
+ PF 0374   为 Python 项目选择分布式 VCS  Cannon, Turnbull, Vassalotti, Warsaw, Ochtman
+ IF 0375   Python 3.1 发布计划  Peterson
+ SA 0376   安装的 Python 发行版数据库  Ziadé
+ SR 0377   Allow __enter__() methods to skip the statement body  Coghlan
+ SF 0378   千位分隔符的格式说明符  Hettinger
+ SW 0379   添加一个赋值表达式  Whitley
+ SF 0380   委派给子生成器的语法  Ewing
+ S  0381   镜像 PyPI 的基础结构  Ziadé, v. Löwis
+ SR 0382   命名空间包  v. Löwis
+ SF 0383   系统字符界面中的不可解码字节  v. Löwis
+ SF 0384   定义一个稳定的 ABI  v. Löwis
+ PF 0385   从 Subversion 迁移到 Mercurial  Ochtman, Pitrou, Brandl
+ SS 0386   更改 Distutils 中的版本比较模块  Ziadé
+ P  0387   向后兼容性策略  Peterson
+
+ SF 0389   argparse - 新的命令行解析模块  Bethard
+ SR 0390   Distutils 的静态元数据  Ziadé
+ SF 0391   用于记录的基于字典的配置  Sajip
+ IF 0392   Python 3.2 发布计划  Brandl
+ SF 0393   灵活的字符串表示  v. Löwis
+ I  0394   类 Unix 系统上的 "python" 命令  Staley, Coghlan, Warsaw
+ SW 0395   模块的限定名  Coghlan
+ ID 0396   模块版本号  Warsaw
+ SF 0397   Windows 的 Python 启动器  Hammond, v. Löwis
+ IF 0398   Python 3.3 发布计划  Brandl
+ IF 0399   原生 Python/C 加速器模块兼容性要求  Cannon
+ SD 0400   弃用 codecs.StreamReader 和 codecs.StreamWriter  Stinner
+ PR 0401   BDFL Retirement  Warsaw, Cannon
+ SR 0402   简化的包布局和分区  Eby
+ SD 0403   General purpose decorator clause (aka "@in" clause)  Coghlan
+ IF 0404   Python 2.8 非发布计划  Warsaw
+ SF 0405   Python 虚拟环境  Meyer
+ SW 0406   改进了 import 状态的封装  Coghlan, Slodkowicz
+ PD 0407   新的发布周期和引入长期支持版本  Pitrou, Brandl, Warsaw
+ SR 0408   标准库 __preview__ 包  Coghlan, Bendersky
+ SF 0409   抑制异常上下文  Furman
+ SR 0410   对时间戳使用 decimal.Decimal 类型  Stinner
+ IA 0411   Python 标准库中的临时包  Coghlan, Bendersky
+ SF 0412   密钥分享字典  Shannon
+ PW 0413   Python 标准库的更快发展  Coghlan
+ SF 0414   Python 3.3 的显式 Unicode 文本  Ronacher, Coghlan
+ SF 0415   使用异常属性实现上下文抑制  Peterson
+ SR 0416   添加一个 frozendict 内建类型  Stinner
+ SF 0417   包括模拟标准库  Foord
+ SF 0418   Add monotonic time, performance counter, and process time functions  Simpson, Jewett, Turnbull, Stinner
+ SD 0419   保护清理语句不受干扰  Colomiets
+ SF 0420   隐式命名空间包  Smith
+ SF 0421   添加 sys.implementation  Snow
+ SW 0422   更简单的类创建定制  Coghlan, Urban
+ ID 0423   与包相关的命名约定和配方  Bryon
+ SF 0424   暴露长度提示的方法  Gaynor
+ SA 0425   构建分布的兼容性标签  Holth
+ ID 0426   Python 软件包的元数据 2.0  Coghlan, Holth, Stufft
+ SA 0427   轮子二进制包格式 1.0  Holth
+ SF 0428   pathlib 模块 - 面向对象的文件系统路径  Pitrou
+ I  0429   Python 3.4 发布计划  Hastings
+ IF 0430   迁移到 Python 3 作为默认在线文档  Coghlan
+ SW 0431   时区支持改进  Regebro
+ S  0432   重新构建 CPython 启动顺序  Coghlan
+ SS 0433   更容易抑制文件描述符的继承  Stinner
+ I  0434   所有分支的 IDLE 增强异常  Rovito, Reedy
+ SF 0435   将一个 Enum 类型添加到 Python 标准库中  Warsaw, Bendersky, Furman
+ S  0436   参数诊所 DSL  Hastings
+ SR 0437   用于指定签名，注释和参数转换器的 DSL  Krah
+ PS 0438   在 PyPI 上过渡到发布文件托管  Krekel, Meyer
+ SR 0439   在 Python 安装中包含隐式 pip 引导  Jones
+ IA 0440   版本识别和依赖规范  Coghlan, Stufft
+ SF 0441   改进 Python ZIP 应用程序支持  Holth, Moore
+ SF 0442   安全的对象 finalization  Pitrou
+ SF 0443   Single-dispatch generic functions  Langa
+ ID 0444   Python Web3 接口  McDonough, Ronacher
+ SF 0445   添加新的 API 来自定义 Python 内存分配器  Stinner
+ SF 0446   使新创建的文件描述符不可继承  Stinner
+ S  0447   添加 __getdescriptor__ 方法到元类  Oussoren
+ SF 0448   附加解包概括  Landau
+ PA 0449   删除 PyPI 镜像自动发现和命名方案  Stufft
+ SF 0450   将统计模块添加到标准库  D'Aprano
+ SF 0451   导入系统的 ModuleSpec 类型  Snow
+ I  0452   加密哈希函数的 API v2.0  Kuchling, Heimes
+ SF 0453   在 Python 安装中显式引导 pip  Stufft, Coghlan
+ SF 0454   添加一个新的 tracemalloc 模块来跟踪 Python 内存分配  Stinner
+ SR 0455   将 key 转换字典添加到集合  Pitrou
+ SF 0456   安全可互换的散列算法  Heimes
+ I  0457   仅位置参数的语法  Hastings
+ S  0458   Surviving a Compromise of PyPI  Kuppusamy, Diaz, Stufft, Cappos
+ SD 0459   Python 软件包的标准元数据扩展  Coghlan
+ SW 0460   添加二进制插值和格式  Pitrou
+ SF 0461   将 % 格式添加到字节和字节数组中  Furman
+ PW 0462   CPython 的核心开发工作流程自动化  Coghlan
+ SR 0463   捕获异常的表达式  Angelico
+ PA 0464   删除 PyPI 镜像真实性 API  Stufft
+ SF 0465   用于矩阵乘法的专用中缀运算符  Smith
+ SF 0466   针对 Python 2.7.x 的网络安全增强功能  Coghlan
+ S  0467   二进制序列的小 API 改进  Coghlan
+ SF 0468   在函数中保存 \*\*kwargs 的顺序  Snow
+ SW 0469   字典迭代代码迁移到 Python 3  Coghlan
+ PA 0470   删除 PyPI 上的外部托管支持  Stufft
+ SF 0471   os.scandir() function -- 一个更好更快的目录迭代器  Hoyt
+ S  0472   支持使用关键字参数进行索引  Borini, Martinot-Lagarde
+ S  0473   将结构化数据添加到内置异常  Kreft
+ PW 0474   创建 forge.python.org  Coghlan
+ SF 0475   重试系统调用与 EINTR 失败  Natali, Stinner
+ SF 0476   默认为 stdlib http 客户端启用证书验证  Gaynor
+ SF 0477   向 Python 2.7 反向保证（PEP 453）  Stufft, Coghlan
+ I  0478   Python 3.5 发布计划  Hastings
+ SF 0479   更改生成器内的 StopIteration 处理  Angelico, GvR
+ S  0480   Surviving a Compromise of PyPI: The Maximum Security Model  Kuppusamy, Diaz, Stufft, Cappos
+ PW 0481   将 CPython 迁移到 Git，Github 和 Phabricator  Stufft
+ I  0482   类型提示的文献概述  Langa
+ I  0483   类型提示理论  GvR, Levkivskyi
+ SA 0484   类型提示  GvR, Lehtosalo, Langa
+ SF 0485   用于测试近似相等的函数  Barker
+ SF 0486   让 Python 启动器知道虚拟环境  Moore
+ SF 0487   更简单的类创建定制  Teichmann
+ SF 0488   消除 PYO 文件  Cannon
+ SF 0489   多相扩展模块初始化  Viktorin, Behnel, Coghlan
+ SR 0490   C 级别的连锁异常  Stinner
+ S  0491   轮子二进制包格式 1.9  Holth
+ SF 0492   具有异步和等待语法的协程  Selivanov
+ SF 0493   用于 Python 2.7 的 HTTPS 验证迁移工具  Coghlan, Kuska, Lemburg
+ I  0494   Python 3.6 发布计划  Deily
+ SF 0495   当地时间消除歧义  Belopolsky, Peters
+ IR 0496   环境标记  Polley
+ P  0497   一个标准的向后兼容机制  Schofield
+ SF 0498   字符串插值  Smith
+ S  0499   ``python -m foo`` should bind ``sys.modules['foo']`` in addition to ``sys.modules['__main__']``  Simpson
+ SR 0500   将日期时间方法委托给他们的协议
+       tzinfo 实现  Belopolsky, Peters
+ SD 0501   通用字符串插值  Coghlan
+ I  0502   字符串插值 - 扩展讨论  Miller
+ IA 0503   简单的仓库 API  Stufft
+ SW 0504   默认使用系统 RNG  Coghlan
+ SD 0505   None-aware operators  Haase
+ SA 0506   添加一个秘密模块到标准库  D'Aprano
+ PR 0507   将 CPython 迁移到 Git 和 GitLab  Warsaw
+ I  0508   Python 软件包的依赖规范  Collins
+ SF 0509   Add a private version to dict  Stinner
+ SR 0510   Specialize functions with guards  Stinner
+ SR 0511   代码转换器的 API  Stinner
+ PF 0512   从 hg.python.org 迁移到 GitHub  Cannon
+ I  0513   便携式 Linux 构建发行版的平台标签  McGibbon, Smith
+ I  0514   在 Windows 注册表中注册 Python  Dower
+ SF 0515   数字文字中的下划线  Brandl, Storchaka
+ SR 0516   为 pip/conda 等构建系统抽象  Collins, Smith
+ SA 0517   源树的构建系统独立格式  Smith, Kluyver
+ IA 0518   指定 Python 项目的最低构建系统要求  Cannon, Smith, Stufft
+ SF 0519   添加文件系统路径协议  Cannon, Zevenhoven
+ SF 0520   保留类的属性定义顺序  Snow
+ SD 0521   Managing global context via 'with' blocks in generators and coroutines  Smith
+ SR 0522   在安全敏感的 API 中允许 BlockingIOError  Coghlan, Smith
+ SF 0523   将框架评估 API 添加到 CPython  Cannon, Viehland
+ SF 0524   在 Linux 上设置 os.urandom() 阻塞  Stinner
+ SF 0525   异步生成器  Selivanov
+ SF 0526   变量注释的语法  Gonzalez, House, Levkivskyi, Roach, GvR
+ PA 0527   Removing Un(der)used file types/extensions on PyPI  Stufft
+ SF 0528   将 Windows 控制台编码更改为 UTF-8  Dower
+ SF 0529   将 Windows 文件系统编码更改为 UTF-8  Dower
+ SF 0530   异步解析  Selivanov
+ SW 0531   存在检查操作符  Coghlan
+ SD 0532   一个断路协议和二元运算符  Coghlan, Haase
+ S  0533   迭代器的确定性清理  Smith
+ S  0534   分发标准库的一个子集  Orsava, Viktorin, Coghlan
+ SD 0535   丰富的比较链接  Coghlan
+ S  0536   文字串插值的最终语法  Angerer
+ I  0537   Python 3.7 发布计划  Deily
+ SF 0538   将传统的 C 语言环境强制转换为基于 UTF-8 的语言环境  Coghlan
+ SA 0539   CPython 中线程本地存储的新 C-API  Bray, Yamamoto
+ SA 0540   添加一个新的 UTF-8 模式  Stinner
+ P  0541   包索引名称保留  Langa
+ S  0542   函数标题中的点符号分配  Meskanen
+ S  0543   Python 的统一 TLS API  Benfield, Heimes
+ S  0544   Protocols: Structural subtyping (static duck typing)  Levkivskyi, Lehtosalo, Langa
+ PF 0545   Python 文档翻译  Palard, Naoki, Stinner
+ SA 0546   将 ssl.MemoryBIO 和 ssl.SSLObject 反向移植到 Python 2.7  Stinner, Benfield
+ S  0547   使用 -m 选项运行扩展模块  Plch, Viktorin
+ SR 0548   更灵活的循环控制  Murray
+ SR 0549   实例描述符  Hastings
+ S  0550   执行上下文  Selivanov, Pranskevichus
+ S  0551   Python 运行时的安全透明度  Dower
+ SF 0552   确定性的 pycs  Peterson
+ SF 0553   Built-in breakpoint()  Warsaw
+ S  0554   Stdlib 中的多个解释器  Snow
+ SW 0555   上下文局部变量(contextvars)  Zevenhoven
+ S  0556   Threaded garbage collection  Pitrou
+ SA 0557   数据类  Smith
+ S  0558   为 locals() 定义的语义  Coghlan
+ SR 0559   内置 noop()  Warsaw
+ SA 0560   核心支持打字模块和泛型类型  Levkivskyi
+ S  0561   分发和包装类型信息  Smith
+ SA 0562   模块 __getattr__ 和 __dir__  Levkivskyi
+ SA 0563   推迟评估注释  Langa
+ SF 0564   添加新的以纳秒为单位的时间函数  Stinner
+ SF 0565   在 __main__ 中显示 DeprecationWarning  Coghlan
+ S  0566   Python 软件包的元数据 1.3  Ingram
+ S  0567   上下文变量  Selivanov
+ SD 0568   上下文变量的发生器灵敏度  Smith
+
+ SF 0628   添加 ``math.tau``  Coghlan
+
+ SR 0666   拒绝愚蠢的缩进  Creighton
+
+ SR 0754   IEEE 754 浮点特殊值  Warnes
+
+ PF 3000   Python 3000  GvR
+ PW 3001   审查和改进标准库模块的程序  Brandl
+ PF 3002   向后不兼容的更改过程  Bethard
+ PF 3003   Python Language Moratorium  Cannon, Noller, GvR
+
+ PF 3099   Python 3000 中不会改变的东西  Brandl
+ PF 3100   杂项 Python 3.0 计划  Cannon
+ SF 3101   高级字符串格式  Talin
+ SF 3102   仅关键字参数  Talin
+ SR 3103   Switch/Case 语句  GvR
+ SF 3104   在外部范围访问名称  Yee
+ SF 3105   Make print a function  Brandl
+ SF 3106   修改 dict.keys(), .values() 和 .items()  GvR
+ SF 3107   函数注释  Winter, Lownds
+ SF 3108   标准库的重组  Cannon
+ SF 3109   在 Python 3000 中引发异常  Winter
+ SF 3110   在 Python 3000 中捕捉异常  Winter
+ SF 3111   简单的输入内置在 Python 3000 中  Roberge
+ SF 3112   Python 3000 中的字节文字  Orendorff
+ SF 3113   去除元组参数拆包  Cannon
+ SF 3114   重命名 iterator.next() 为 iterator.__next__()  Yee
+ SF 3115   Python 3000 中的元类  Talin
+ SF 3116   新的 I/O  Stutzbach, GvR, Verdone
+ SR 3117   后缀类型声明  Brandl
+ SF 3118   修改缓冲区协议  Oliphant, Banks
+ SF 3119   引入抽象基类  GvR, Talin
+ SF 3120   使用 UTF-8 作为默认的源码编码  von Löwis
+ SA 3121   扩展模块初始化和定稿  von Löwis
+ SR 3122   主模块的描述  Cannon
+ SF 3123   使 PyObject_HEAD 符合标准 C  von Löwis
+ SD 3124   重载，泛型函数，接口和适配器  Eby
+ SR 3125   删除反斜杠继续  Jewett
+ SR 3126   删除隐式字符串连接  Jewett, Hettinger
+ SF 3127   整数文字支持和语法  Maupin
+ SR 3128   BList：更快的列表类型  Stutzbach
+ SF 3129   Class Decorators  Winter
+ SR 3130   访问当前模块/类/功能  Jewett
+ SF 3131   支持非 ASCII 标识符  von Löwis
+ SF 3132   扩展的 Iterable 解包  Brandl
+ SR 3133   引入 Roles  Winter
+ SF 3134   异常链接和嵌入式回溯  Yee
+ SF 3135   新的 super  Spealman, Delaney, Ryan
+ SR 3136   标记中断和继续  Chisholm
+ SF 3137   不可变字节和可变缓冲区  GvR
+ SF 3138   Python 3000 中的字符串表示  Ishimoto
+ SR 3139   清除 sys 和 "interpreter" 模块  Peterson
+ SR 3140   str(container) 应该调用 str(item)，而不是 repr(item)  Broytman, Jewett
+ SF 3141   数字的类型层次结构  Yasskin
+ SR 3142   为生成器表达式添加一个 "while" 子句  Britton
+ SD 3143   标准守护进程库  Finney
+ SF 3144   Python 标准库的 IP 地址操作库  Moody
+ SW 3145   subprocess.Popen 的 异步 I/O  Pruitt, McCreary, Carlson
+ SW 3146   将 Unladen Swallow 合并到 CPython 中  Winter, Yasskin, Kleckner
+ SF 3147   PYC 存储库目录  Warsaw
+ SF 3148   futures - execute computations asynchronously  Quinlan
+ SF 3149   ABI 版本标记 .so 文件  Warsaw
+ SD 3150   Statement local namespaces (aka "given" clause)  Coghlan
+ SF 3151   修改操作系统和 IO 异常层次结构  Pitrou
+ SR 3152   Cofunctions  Ewing
+ SS 3153   异步 IO 支持  Houtven
+ SF 3154   Pickle 协议版本 4  Pitrou
+ SF 3155   类和函数的限定名  Pitrou
+ SF 3156   Asynchronous IO Support Rebooted: the "asyncio" Module  GvR
+
+ IF 3333   Python Web 服务器的网关接口 v1.0.1  Eby
+
+
+Reserved PEP Numbers
+
+     num   title  owner
+     ---   -----  -----
+     801   RESERVED  Warsaw
+
+
+Key
+
+    S - Standards Track PEP
+    I - Informational PEP
+    P - Process PEP
+
+    A - Accepted proposal
+    R - Rejected proposal
+    W - Withdrawn proposal
+    D - Deferred proposal
+    F - Final proposal
+    A - Active proposal
+    D - Draft proposal
+    S - Superseded proposal
+
+
+Owners
+
+    name                         email address
+    ----                         -------------
+    Aahz                         aahz@pythoncraft.com
+    Ahlstrom, James C.           jim@interet.com
+    Althoff, Jim                 james_althoff@i2.com
+    Altis, Kevin                 altis@semi-retired.com
+    Angelico, Chris              rosuav@gmail.com
+    Angerer, Philipp             phil.angerer@gmail.com
+    Ascher, David                davida@activestate.com
+    Astrand, Peter               astrand@lysator.liu.se
+    Banks, Carl                  pythondev@aerojockey.com
+    Barker, Christopher          chris.barker@noaa.gov
+    Barrett, Paul                barrett@stsci.edu
+    Batista, Facundo             facundo@taniquetil.com.ar
+    Baxter, Anthony              anthony@interlink.com.au
+    Behnel, Stefan               stefan_ml@behnel.de
+    Bellman, Thomas              bellman+pep-divmod@lysator.liu.se
+    Belopolsky, Alexander        alexander.belopolsky@gmail.com
+    Bendersky, Eli               eliben@gmail.com
+    Benfield, Cory               cory@lukasa.co.uk
+    Bethard, Steven              steven.bethard@gmail.com
+    Borini, Stefano              
+    Brandl, Georg                georg@python.org
+    Bray, Erik M.                
+    Britton, Gerald              gerald.britton@gmail.com
+    Broytman, Oleg               phd@phdru.name
+    Bryon, Benoit                benoit@marmelune.net
+    Cannon, Brett                brett@python.org
+    Cappos, Justin               jcappos@nyu.edu
+    Carlson, Josiah              jcarlson@uci.edu
+    Carroll, W Isaac             icarroll@pobox.com
+    Chisholm, Matt               matt-python@theory.org
+    Coghlan, Nick                ncoghlan@gmail.com
+    Cole, Dave                   djc@object-craft.com.au
+    Collins, Robert              rbtcollins@hp.com
+    Colomiets, Paul              paul@colomiets.name
+    Craig, Christopher A.        python-pep@ccraig.org
+    Creighton, Laura             lac@strakt.com
+    D'Aprano, Steven             steve@pearwood.info
+    Deily, Ned                   nad@python.org
+    Delaney, Tim                 timothy.c.delaney@gmail.com
+    Diaz, Vladimir               vladimir.diaz@nyu.edu
+    Diederich, Jack              jackdied@gmail.com
+    Dörwald, Walter              walter@livinglogic.de
+    Dower, Steve                 steve.dower@python.org
+    Drake, Fred L., Jr.          fdrake@acm.org
+    Dubner, Michael P.           dubnerm@mindless.com
+    Dubois, Paul F.              paul@pfdubois.com
+    Eby, Phillip J.              pje@telecommunity.com
+    Eby, P.J.                    pje@telecommunity.com
+    Elliott, Micah               mde at tracos.org
+    Epler, Jeff                  jepler@unpythonic.net
+    Eppstein, David              eppstein@ics.uci.edu
+    Evans, Clark C.              cce@clarkevans.com
+    Ewing, Greg                  greg.ewing@canterbury.ac.nz
+    Ewing, Gregory               greg.ewing@canterbury.ac.nz
+    Faassen, Martijn             faassen@infrae.com
+    Finney, Ben                  ben+python@benfinney.id.au
+    Foord, Michael               michael@python.org
+    Furman, Ethan                ethan@stoneleaf.us
+    Gaynor, Alex                 alex.gaynor@gmail.com
+    Giacometti, Frédéric B.      fred@arakne.com
+    Gilbert, Scott               xscottg at yahoo.com
+    Gonzalez, Ryan               rymg19@gmail.com
+    Goodger, David               goodger@python.org
+    Griffin, Grant               g2@iowegian.com
+    Haase, Mark E.               mehaase@gmail.com
+    Hammond, Mark                mhammond@skippinet.com.au
+    Harris, Peter                scav@blueyonder.co.uk
+    Hastings, Larry              larry@hastings.org
+    Heimes, Christian            christian@python.org
+    Heller, Thomas               theller@python.net
+    Hetland, Magnus Lie          magnus@hetland.org
+    Hettinger, Raymond           python@rcn.com
+    Hodgson, Neil                neilh@scintilla.org
+    Holth, Daniel                dholth@gmail.com
+    House, Philip                phouse512@gmail.com
+    Houtven, Laurens Van         _@lvh.cc
+    Hoyt, Ben                    benhoyt@gmail.com
+    Hudson, Michael              mwh@python.net
+    Hylton, Jeremy               jeremy@alum.mit.edu
+    Ingram, Dustin               di@di.codes
+    Ishimoto, Atsuo              ishimoto--at--gembook.org
+    Jansen, Jack                 jack@cwi.nl
+    Jewett, Jim                  jimjjewett@gmail.com
+    Jewett, Jim J.               jimjjewett@gmail.com
+    Jones, Richard               richard@python.org
+    Kleckner, Reid               rnk@mit.edu
+    Kluyver, Thomas              thomas@kluyver.me.uk
+    Koltsov, Stepan              yozh@mx1.ru
+    Krah, Stefan                 skrah@bytereef.org
+    Kreft, Sebastian             skreft@deezer.com
+    Krekel, Holger               holger@merlinux.eu
+    Kuchling, A.M.               amk@amk.ca
+    Kuppusamy, Trishank Karthik  trishank@nyu.edu
+    Kuska, Robert                rkuska@redhat.com
+    Landau, Joshua               joshua@landau.ws
+    Langa, Łukasz                lukasz@langa.pl
+    Lehtosalo, Jukka             jukka.lehtosalo@iki.fi
+    Lemburg, Marc-André          mal@lemburg.com
+    Levkivskyi, Ivan             levkivskyi@gmail.com
+    Lielens, Gregory             gregory.lielens@fft.be
+    Lindqvist, Björn             bjourne@gmail.com
+    von Löwis, Martin            martin@v.loewis.de
+    v. Löwis, Martin             martin@v.loewis.de
+    Lownds, Tony                 tony@lownds.com
+    Martelli, Alex               aleaxit@gmail.com
+    Martinot-Lagarde, Joseph     
+    Mastrodomenico, Lino         l.mastrodomenico@gmail.com
+    Maupin, Patrick              pmaupin@gmail.com
+    McClelland, Andrew           eternalsquire@comcast.net
+    McCreary, Charles R.         
+    McDonough, Chris             chrism@plope.com
+    McGibbon, Robert T.          rmcgibbo@gmail.com
+    McMillan, Gordon             gmcm@hypernet.com
+    McNamara, Andrew             andrewm@object-craft.com.au
+    Meskanen, Markus             markusmeskanen@gmail.com
+    Meyer, Mike                  mwm@mired.org
+    Meyer, Carl                  carl@oddbird.net
+    Mick, Trent                  trentm@activestate.com
+    Miller, Mike G.              
+    Montanaro, Skip              skip@pobox.com
+    Moody, Peter                 pmoody@google.com
+    Moore, Paul                  p.f.moore@gmail.com
+    Murray, R David              
+    Naoki,         Inada         songofacandy@gmail.com
+    Natali, Charles-François     cf.natali@gmail.com
+    Noller, Jesse                jnoller@gmail.com
+    North, Ben                   ben@redfrontdoor.org
+    Norwitz, Neal                nnorwitz@gmail.com
+    Ochtman, Dirkjan             dirkjan@ochtman.nl
+    Oliphant, Travis             oliphant@ee.byu.edu
+    Orendorff, Jason             jason.orendorff@gmail.com
+    Orsava, Tomáš                tomas.n@orsava.cz
+    Oudkerk, Richard             r.m.oudkerk@googlemail.com
+    Oussoren, Ronald             ronaldoussoren@mac.com
+    Palard, Julien               julien@palard.fr
+    Pedroni, Samuele             pedronis@python.org
+    Pelletier, Michel            michel@users.sourceforge.net
+    Peters, Tim                  tim.peters@gmail.com
+    Peterson, Benjamin           benjamin@python.org
+    Petrone, Jason               jp@demonseed.net
+    Pitrou, Antoine              solipsis@pitrou.net
+    Plch, Marcel                 gmarcel.plch@gmail.com
+    Polley, James                jp@jamezpolley.com
+    Pranskevichus, Elvis         elvis@magic.io
+    Prescod, Paul                paul@prescod.net
+    Pruitt, (James) Eric         
+    Quinlan, Brian               brian@sweetapp.com
+    Reedy, Terry                 tjreedy@udel.edu
+    Regebro, Lennart             regebro@gmail.com
+    Reifschneider, Sean          jafo-pep@tummy.com
+    Reis, Christian R.           kiko at async.com.br
+    Riehl, Jonathan              jriehl@spaceship.com
+    Roach, Lisa                  lisaroach14@gmail.com
+    Roberge, Andre               andre.roberge at gmail.com 
+    Ronacher, Armin              armin.ronacher@active-4.com
+    van Rossum, Guido (GvR)      guido@python.org
+    van Rossum, Just (JvR)       just@letterror.com
+    Rovito, Todd                 rovitotv@gmail.com
+    Ryan, Lie                    lie.1296@gmail.com
+    Sajip, Vinay                 vinay_sajip at red-dove.com
+    Schemenauer, Neil            nas@arctrix.com
+    Schneider-Kamp, Peter        nowonder@nowonder.de
+    Schofield, Ed                ed at pythoncharmers.com
+    Selivanov, Yury              yury@magic.io
+    Seo, Jiwon                   seojiwon@gmail.com
+    Shannon, Mark                mark@hotpy.org
+    Simpson, Cameron             cs@zip.com.au
+    Slodkowicz, Greg             jergosh@gmail.com
+    Smith, Kevin D.              kevin.smith@themorgue.org
+    Smith, Eric V.               eric@trueblade.com
+    Smith, Nathaniel J.          njs@pobox.com
+    Smith, Nathaniel             njs@pobox.com
+    Smith, Ethan                 ethan@ethanhs.me
+    Snow, Eric                   ericsnowcurrently@gmail.com
+    Spealman, Calvin             ironfroggy@gmail.com
+    Staley, Kerrick              mail@kerrickstaley.com
+    Stein, Greg                  gstein@lyra.org
+    Stinner, Victor              victor.stinner@gmail.com
+    Storchaka, Serhiy            
+    Stufft, Donald               donald@stufft.io
+    Stutzbach, Daniel            daniel@stutzbachenterprises.com
+    Suzi, Roman                  rnd@onego.ru
+    Talin                        viridia@gmail.com
+    Taschuk, Steven              staschuk@telusplanet.net
+    Teichmann, Martin            lkb.teichmann@gmail.com
+    Tirosh, Oren                 oren at hishome.net
+    Turnbull, Stephen J.         stephen@xemacs.org
+    Urban, Daniel                urban.dani+py@gmail.com
+    Vassalotti, Alexandre        alexandre@peadrop.com
+    Verdone, Mike                mike.verdone@gmail.com
+    Viehland, Dino               dinov@microsoft.com
+    Viktorin, Petr               encukou@gmail.com
+    Warnes, Gregory R.           gregory_r_warnes@groton.pfizer.com
+    Warsaw, Barry                barry@python.org
+    Way, Terence                 terry@wayforward.net
+    Wells, Cliff                 logiplexsoftware@earthlink.net
+    Whitley, Jervis              jervisau@gmail.com
+    Wilson, Greg                 gvwilson@ddj.com
+    Winter, Collin               collinwinter@google.com
+    Wouters, Thomas              thomas@python.org
+    Yamamoto, Masayuki           
+    Yasskin, Jeffrey             jyasskin@google.com
+    Yee, Ka-Ping                 ping@zesty.ca
+    Zadka, Moshe                 moshez@zadka.site.co.il
+    Zevenhoven, Koos             k7hoven@gmail.com
+    Zhu, Huaiyu                  hzhu@users.sourceforge.net
+    Ziadé, Tarek                 tarek@ziade.org
+
+
+References
+
+
+    [1] PEP 1: PEP Purpose and Guidelines
+    [2] View PEP history online
+        https://hg.python.org/peps/
+
+
+Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 70
+coding: utf-8
+End:
